@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,16 +19,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex items-start justify-between`}>
+      <body className={`${inter.className} flex`}>
+         <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            
         <div className="hidden lg:flex min-w-[200px] border-r min-h-screen">
-        <Sidebar/>
+        <Sidebar />
         </div>
-        <main className=" grid w-full h-full">
-        <Header/>
-        <div>
-          {children}
-          </div>
-        </main>
+       
+        <main className="flex flex-col h-screen w-screen">
+           <Header/>
+            {children}
+             </main>
+          </ThemeProvider>
+          
+       
       </body>
     </html>
   );
