@@ -33,7 +33,7 @@ import UserItem from "@/components/UserItem";
 import {
   Menu,
   BellIcon,
-  Search, 
+  Search,
   X,
   Cloud,
   CreditCard,
@@ -56,8 +56,7 @@ import Sidebar from "./Sidebar";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 const FormSchema = z.object({
-  query: z.string().min(2, {
-  }),
+  query: z.string().min(2, {}),
 });
 
 export default function Header() {
@@ -69,20 +68,21 @@ export default function Header() {
     const form = useForm<z.infer<typeof FormSchema>>({
       resolver: zodResolver(FormSchema),
       defaultValues: {
-        query: "",      },
+        query: "",
+      },
     });
     const searchParams = useSearchParams();
     const pathname = usePathname();
-    const {replace} = useRouter();
-   const handleSearch = function (term: string) {
-     const params = new URLSearchParams(searchParams);
-     if  (term) {
-       params.set('query', term);
-     } else {
-      params.delete('query');
-     }
-     replace(`${pathname}?${params.toString()}`);
-    }
+    const { replace } = useRouter();
+    const handleSearch = function (term: string) {
+      const params = new URLSearchParams(searchParams);
+      if (term) {
+        params.set("query", term);
+      } else {
+        params.delete("query");
+      }
+      replace(`${pathname}?${params.toString()}`);
+    };
 
     const onSubmit = function (data: z.infer<typeof FormSchema>) {
       console.log(JSON.stringify(data, null, 2));
@@ -93,8 +93,8 @@ export default function Header() {
             <code className="text-white">{JSON.stringify(data, null, 2)}</code>
           </pre>
         ),
-      })
-    }
+      });
+    };
 
     const [notifications, setNotifications] = useState<any>([
       {
@@ -139,12 +139,15 @@ export default function Header() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                    <Input placeholder="shadcn" 
-                    // onChange={(e) => {
-                    //     handleSearch(e.target.value);
-                    //   }
-                    // }
-                     {...field} />
+                      
+                        <Input
+                        placeholder="Search"
+                        // onChange={(e) => {
+                        //     handleSearch(e.target.value);
+                        //   }
+                        // }
+                        {...field}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -152,7 +155,7 @@ export default function Header() {
               />
             </form>
           </Form>
-          
+
           <div className="flex items-center justify-end gap-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
