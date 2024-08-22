@@ -1,0 +1,84 @@
+{
+  "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-Bby4qdTP.js": {
+    "id": "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-Bby4qdTP.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_vidstack_react_dev_chunks_vidstack-Bby4qdTP_js.js"
+    ]
+  },
+  "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-C4FuHl6d.js": {
+    "id": "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-C4FuHl6d.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_vidstack_react_dev_chunks_vidstack-C4FuHl6d_js.js"
+    ]
+  },
+  "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-Cjt-9Nqm.js": {
+    "id": "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-Cjt-9Nqm.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_vidstack_react_dev_chunks_vidstack-Cjt-9Nqm_js.js"
+    ]
+  },
+  "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-Dci4Ce5n.js": {
+    "id": "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-Dci4Ce5n.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_vidstack_react_dev_chunks_vidstack-Dci4Ce5n_js.js"
+    ]
+  },
+  "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-VGbd3Q_b.js": {
+    "id": "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-VGbd3Q_b.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_vidstack_react_dev_chunks_vidstack-VGbd3Q_b_js.js"
+    ]
+  },
+  "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-Zc3I7oOd.js": {
+    "id": "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-Zc3I7oOd.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_vidstack_react_dev_chunks_vidstack-Zc3I7oOd_js.js"
+    ]
+  },
+  "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-krOAtKMi.js": {
+    "id": "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> ./vidstack-krOAtKMi.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_vidstack_react_dev_chunks_vidstack-krOAtKMi_js.js"
+    ]
+  },
+  "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> media-captions": {
+    "id": "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-Nm9OJy7x.js -> media-captions",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_media-captions_dist_dev_js.js"
+    ]
+  },
+  "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-VGbd3Q_b.js -> ./vidstack-OqUG8Vsn.js": {
+    "id": "..\\node_modules\\@vidstack\\react\\dev\\chunks\\vidstack-VGbd3Q_b.js -> ./vidstack-OqUG8Vsn.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_vidstack_react_dev_chunks_vidstack-OqUG8Vsn_js.js"
+    ]
+  },
+  "..\\node_modules\\@vidstack\\react\\dev\\vidstack.js -> ./chunks/vidstack-3hs3-8i_.js": {
+    "id": "..\\node_modules\\@vidstack\\react\\dev\\vidstack.js -> ./chunks/vidstack-3hs3-8i_.js",
+    "files": []
+  },
+  "..\\node_modules\\media-captions\\dist\\dev\\index.js -> ./errors.js": {
+    "id": "..\\node_modules\\media-captions\\dist\\dev\\index.js -> ./errors.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_media-captions_dist_dev_errors_js.js"
+    ]
+  },
+  "..\\node_modules\\media-captions\\dist\\dev\\index.js -> ./srt-parser.js": {
+    "id": "..\\node_modules\\media-captions\\dist\\dev\\index.js -> ./srt-parser.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_media-captions_dist_dev_srt-parser_js.js"
+    ]
+  },
+  "..\\node_modules\\media-captions\\dist\\dev\\index.js -> ./ssa-parser.js": {
+    "id": "..\\node_modules\\media-captions\\dist\\dev\\index.js -> ./ssa-parser.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_media-captions_dist_dev_ssa-parser_js.js"
+    ]
+  },
+  "..\\node_modules\\media-captions\\dist\\dev\\ssa-parser.js -> ./errors.js": {
+    "id": "..\\node_modules\\media-captions\\dist\\dev\\ssa-parser.js -> ./errors.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_media-captions_dist_dev_errors_js.js"
+    ]
+  }
+}

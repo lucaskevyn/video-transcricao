@@ -54,6 +54,7 @@ import {
 import { Item } from "@radix-ui/react-dropdown-menu";
 import Sidebar from "./Sidebar";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useAuth } from "@/contexts/AuthContext";
 
 const FormSchema = z.object({
   query: z.string().min(2, {}),
@@ -61,6 +62,7 @@ const FormSchema = z.object({
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const { signIn, signOut, user } = useAuth();
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
@@ -139,8 +141,7 @@ export default function Header() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      
-                        <Input
+                      <Input
                         placeholder="Search"
                         // onChange={(e) => {
                         //     handleSearch(e.target.value);
@@ -157,6 +158,7 @@ export default function Header() {
           </Form>
 
           <div className="flex items-center justify-end gap-2">
+            <h2>{user?.firstName}</h2>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button className="relative" variant="outline" size="icon">
@@ -270,9 +272,14 @@ export default function Header() {
                   <span>API</span>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={() => signOut()}>
                   <LogOut className="mr-2 h-4 w-4" />
                   <span>Log out</span>
+                  <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => signIn()}>
+                  <LogOut className="mr-2 h-4 w-4" />
+                  <span>Log in</span>
                   <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
                 </DropdownMenuItem>
               </DropdownMenuContent>
